@@ -19,6 +19,7 @@ class MinhaApp(App):
 def exibir_mansagem(self, instance):
     nome_usuario = self.input.nome.text
     mensagem = f'Olá {nome_usuario}, você está avançando no Kivy! Parabéns SESIANOO!!!'
+    self.label_mensagem.text = mensagem
 
 if __name__ == '__main__':
     MinhaApp().run()    
